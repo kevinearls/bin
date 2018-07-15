@@ -1,0 +1,2 @@
+git checkout -b jboss-fuse-6.2.1
+git push -u origin jboss-fuse-6.2.1

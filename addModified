@@ -1,0 +1,2 @@
+set -x 
+git status | grep modified | sed 's/^.*modified://g' | xargs git add

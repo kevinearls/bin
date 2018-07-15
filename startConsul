@@ -1,0 +1,1 @@
+~/tools/consul agent --ui --data-dir=/Users/kearls/tmp/consul -bind 127.0.0.1 -server -bootstrap

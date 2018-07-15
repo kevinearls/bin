@@ -1,0 +1,18 @@
+## syntax: repeat [iterations] testname
+if [ "$#" == 2 ]; then
+    max=$1
+    testname=$2
+else
+    max=100
+    testname=$1
+fi
+
+echo ">>>>>>> Running $testname $max times"
+for((i=1;i<=$max;i++))
+do
+    echo ">>>>>>>> Iteration ${i} of ${max}" at `date`
+    mvn -Dtest=$testname test; 
+    if [ "$?" == 0 ]; then 
+        break; 
+     fi 
+done

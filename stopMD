@@ -1,0 +1,2 @@
+sudo mdutil -v -a -i off
+## OR sudo  mdutil -v -a -d

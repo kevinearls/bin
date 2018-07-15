@@ -1,0 +1,3 @@
+set -x
+pgrep -f org.apache.karaf.main.Main
+pkill -f org.apache.karaf.main.Main
