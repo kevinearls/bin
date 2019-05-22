@@ -1,0 +1,6 @@
+minishift stop
+minishift delete 
+minishift start --memory 6144 --vm-driver xhyve
+minishift addons enable ingress
+minishift ssh -- 'sudo sysctl -w vm.max_map_count=262144'
+minishift addon apply anyuid
