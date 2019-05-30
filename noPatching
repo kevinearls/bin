@@ -1,2 +1,0 @@
-echo "" >> ./etc/system.properties
-echo "patching.disabled = true" >> ./etc/system.properties

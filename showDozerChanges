@@ -1,1 +1,0 @@
-git log --pretty=format:"%H %an %ad %s " --date=short 2.12.0.redhat-6-1-0-patch..2.15.0.redhat-6-2-x-patch components/camel-dozer
