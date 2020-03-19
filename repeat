@@ -10,9 +10,16 @@ fi
 echo ">>>>>>> Running $testname $max times"
 for((i=1;i<=$max;i++))
 do
+    START=$(date +%s);
     echo ">>>>>>>> Iteration ${i} of ${max}" at `date`
     mvn -Dtest=$testname test; 
     if [ "$?" != 0 ]; then 
+        END=$(date +%s);
+        DURATION=$(echo $((END-START)) | awk '{print int($1/60)":"int($1%60)}')
+        echo "Iteration ${i} took ${DURATION}"
         break; 
-     fi 
+     fi
+     END=$(date +%s);
+     DURATION=$(echo $((END-START)) | awk '{print int($1/60)":"int($1%60)}')
+     echo "Iteration ${i} took ${DURATION}"
 done

@@ -1,0 +1,1 @@
+oc login -u jenkins https://api.ocp4-jqe5.maistra.upshift.redhat.com:6443

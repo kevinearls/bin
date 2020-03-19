@@ -1,0 +1,4 @@
+set -x
+oc projects | grep suite.*-15 | xargs kubectl delete namespace
+oc projects | grep main-15 | xargs kubectl delete namespace
+oc projects | grep osdk-e2e-* | xargs kubectl delete namespace
