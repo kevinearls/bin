@@ -1,5 +1,0 @@
-minikube stop
-minikube delete 
-minikube start --memory 12288 --vm-driver hyperkit
-minikube addons enable ingress
-minikube ssh -- 'sudo sysctl -w vm.max_map_count=262144'
